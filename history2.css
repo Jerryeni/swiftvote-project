@@ -1,0 +1,103 @@
+ *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            width: 100%;
+            height: 100%;
+            background-color: rgb(224, 224, 224);
+            /* padding: 5px; */
+        }
+        .wrapper .top{
+            background-color: white;
+            height: 80px;
+
+        }
+        .wrapper .container-box{
+            width: 100%;
+            background-color: rgb(255, 255, 255);  
+            padding: 0px  25px ;  
+        }
+        .wrapper .container-box .part1{
+            width: 100%;
+            height: auto;
+            padding-top: 20px;
+        }
+        .wrapper .container-box .part1 .first{
+            width: 100%;  
+        }
+        .wrapper .container-box .part1 .first .whole{
+            width: 100%;  
+            height: 100px;
+           border-bottom:1px solid rgb(192, 192, 192);
+            display: grid;
+            grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+        }
+        .first .whole .left{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            /* border-right: 1px solid black; */
+            /* justify-content: center; */
+        }
+        .first .whole .left .emblem{
+            width: 20%;
+            height: 100%;
+            display: flex;
+            /* justify-content: center; */
+            align-items: center;
+        }
+        .first .whole .left .details{
+            width: 80%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .details p{
+            line-height: 10px;
+        }
+        .first .whole .center{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+      
+        .first .whole .center .details{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            /* border-right: 1px solid black; */
+            justify-content: center;
+            align-items:center;
+            flex-direction: column;
+           
+        }
+        .first .whole .center .details p{
+           text-align: left;
+        }
+        .d-list ul{
+            width: 100%;
+            display: flex;
+        }
+        .d-list ul li{
+            padding-right: 30px;
+        }
+          .first .whole .right{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+          .first .whole .right button{
+            padding: 5px;
+            border: none;
+            border-radius: 10px;
+        }
+        .id{
+            color: rgb(0, 179, 179);
+        }

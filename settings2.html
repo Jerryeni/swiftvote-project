@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+        <title>Swiftvote</title>
+        <link rel="stylesheet" href="dist/apexcharts.css">
+        <link rel="shortcut icon" href="assets/img/Swiftvote Logo.svg" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+        <script src="https://rawgit.com/moment/2.2.1/min/moment.min.js"></script>
+        <link rel="stylesheet" href="../../fonts.googleapis.com/css21bd6.css?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&amp;display=swap" />
+        <link rel="stylesheet" href="../../fonts.googleapis.com/icon?family=Materials+Icons+Sharp" />
+
+         <!-- <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />  -->
+
+        <!-- <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css" /> -->
+        <!-- <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css" /> -->
+        <!-- <link rel="stylesheet" href="assets/bootstrap5/css/bootstrap.min.css"> -->
+
+        <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="style2.css"/> -->
+        <!-- <link rel="stylesheet" href="style3.css"/> -->
+        <!-- <link rel="stylesheet" href="style4.css"/> -->
+        <link rel="stylesheet" href="settingstyle.css"/>
+        <!-- <link rel="stylesheet" href="style2.css"/> -->
+        <!-- <link rel="stylesheet" href="style3.css"/> -->
+        <link rel="stylesheet" href="css/history.css">
+        <!-- <link rel="stylesheet" href="tool.css"/> -->
+        <style>
+            body{
+                background-color: #e5e5e5;
+            }
+        </style>
+    </head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                        <img src="logo1.png" width="50px" height="50px" alt="Unn Logo" style="margin-left: 10px;">
+                        <h2><b>UNN General Electoral Vote</b></span><br>
+                    
+                        <span style="margin-top: -20px; font-size: 0.68rem; color: grey;">General Election</span> </h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <i class="fas fa-window-close">close</i>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="Dashboard2.html" class="active">
+                    <i class="fas fa-th-large"></i>
+                    <h3 class>Dashboard</h3>                </a>
+                <a href="candidates.html">
+                    <i class="fas fa-user"></i>
+                    <h3>Candidate</h3>
+                </a>
+                <a href="voters.html">
+                    <i class="fas fa-users"></i>
+                    <h3>Voters</h3>
+                </a>
+                <a href="tool.html">
+                    <i class="fas fa-wrench"></i>
+                    <h3>Tool</h3>
+                </a>
+                <hr>
+                <a href="history.html">
+                    <i class="fas fa-clock"></i>
+                    <h3>History</h3>
+                </a>
+                <a href="payment.html">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Payment</h3>
+                </a>
+                <a href="settings.html">
+                    <i class="fas fa-cog"></i>
+                    <h3>Settings</h3>
+                </a>
+                <hr>
+                <a href="support.html">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Support</h3>
+                </a>
+                
+                
+                <a href="help.html">
+                    <i class="fas fa-question"></i>
+                    <h3>Help</h3>
+                </a>
+                <a href="logout.html">
+                    <i class="fas fa-lock"></i>
+                   <h3>Log out</h3>
+                </a>
+                <a href="Dashboard2.html">
+                    <img src="assets/img/Swiftvote Logo.svg" width = "90" alt="Logo" />
+                </a>
+                
+                
+            </div>
+        </aside>
+        <!-- Main page starts -->
+        
+        <div class="wrapper">
+            <div class="top">
+                <div class=""></div>
+                <!-- <div class="white">ddd</div> -->
+                <div class="search">
+                    <form action="">
+                        <input type="text" id="search" placeholder="search here...">
+                    <label for="search"><i class="fas fa-search"></i></label>
+                    </form>
+                    
+                </div>
+                <div class="right-top">
+                <button class="menu-btn">   
+                    <i class="fas fa-bars">menu</i>
+                </button>
+                <div class="theme-toggler">
+                    <i class="fas fa-sun active"></i>
+                    <i class="fas fa-moon"></i>
+                </div>
+                <div class="prpfile-photo">
+                     <img src="me2.jpg" style="width: 30px; height: 30px; border-radius: 50%;" alt="">
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p><b>Jerry Eni</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                </div>
+                <a href="notifications.html" style="color: #003478;"><i class="fas fa-bell" style="margin-right: 6rem;"></i></a>
+            </div>
+            </div>
+
+            <div class="nav">
+                
+                <div class="date">
+                    <!-- <input type="time"> -->
+                </div>
+                <div class="date">
+                    <input type="date">
+                </div>
+            </div>
+            
+            <div class="container-box">
+
+                
+                <main>
+
+                    <!-- charts -->
+                    <div class="voting-list">
+                        <ul  style="margin: 2rem;">
+                            <li style="display: relative;"><b>
+                               Poll access <i class="fas fa-eye" style="float: right;">  </i>
+                            </b> </li>
+                            <li style="display: relative;"> <b>
+                                <select name="" id="">
+                                    <option value="">vote fee <i class="fas fa-arrow"></i></option>
+                                </select>
+                            </b> </li>
+                            <li><b></b> </li>
+                            <li><b></b> </li>
+                            <li><b></b> </li>
+                            <li><b></b> </li>
+                            <li><b></b> </li>
+                        </ul>
+                    </div>
+                
+                    
+      
+                </main>
+            
+                <div class="right">
+                    <div class="charts">
+                        <div class="chart" style="display: flex; align-items: center; justify-content: center;">
+                            <form action="">
+                                <div class="name" style="margin: 2rem">
+                                    <label for="name">Full name<span style="color: red;">*</span></label>
+                                    <input type="text" placeholder="Jonathan Obi" style="border: 1px gray solid;  border-radius: 5px;">
+                                    <br>
+                                </div>
+                               
+                    
+                                <div class="left" style="margin: 2rem">
+                                    <label for="card">Add credit or debit Card<span style="color: red;">*</span></label>
+                                    <input type="text" placeholder="4442-4534-5555-3434" style="border: 1px gray solid;  border-radius: 5px; transform: translateY ; background: transparent"   >
+                                    <h4 style="color: #003478; float: right; margin-top: -1rem; right: -6rem;">VISA</h4>
+                                </div>
+                                <div class="next" style="display: relative;">
+                                    <div class="exp">
+                                        <label for="card">Expiring date<span style="color: red;">*</span></label>
+                                        <input type="text" placeholder="4442-4534-5555-3434" style="border: 1px gray solid;  border-radius: 5px; transform: translateY ; background: transparent; float: left; width: 20%"   >
+                                    </div>
+                                    
+                                    <label for="card">Expiring date<span style="color: red;">*</span></label>
+                                    <input type="text" placeholder="4442-4534-5555-3434" style="border: 1px gray solid;  border-radius: 5px; background: transparent; float: right; width: 20%"   >
+                                </div>  
+                                
+                            
+                            
+                                
+                            </form>
+                             
+                        </div>
+                     </div>
+                    
+                     
+                 </div>
+            </div> <br>
+        
+           
+        
+        
+
+        
+        </div>
+    
+    </div>
+   
+        
+</body>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> 
+
+        <script src="assets/js/script.js"></script>
+        
+        <script src="chart1.js"></script>
+        <!-- <script src="chart2.js"></script> -->
+        <script src="script.js"></script>
+        <script src="dist/apexcharts.min.js"></script>
+        
+
+        
+</html>

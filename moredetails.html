@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/moredetails.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/loginspecialclass.css">
+    <script src="js/formValidation.js" defer></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container-fluid right">
+        <div class="">
+          <div class="logo pb-5 pt-2">
+            <img src="image/Swiftvote Logo.svg" />
+          </div>
+          <div class="formholder">
+            <div class="content">
+              <div class="">
+                <div class="">
+                  <p class="w-100 lead text-left">
+                    We're still on it :) we'd love to know more about your<br /><b
+                      >yourself and your school</b
+                    >
+                  </p>
+                </div>
+              </div>
+              <form action="verifyemail.html" class="detail-form de-form manys">
+                <div class="election-title row">
+                  <div class="election-title col-6">
+                    <label class="border-label" for="">School role</label>
+                    <input type="text" name="" id="" class="formInp" />
+                  </div>
+                  <div class="election-title col-6">
+                    <label class="border-label" for="">School ID number</label>
+                    <input type="text" name="" id="" class="formInp" />
+                  </div>
+                </div>
+                <div class="election-title">
+                  <label class="border-label" for=""
+                    >School email address</label
+                  >
+                  <input type="text" name="" id="" class="formInp" />
+                </div>
+                <div class="election-title row">
+                  <div class="col-6">
+                    <label class="border-label" for="">Numbers of admin</label>
+                    <input type="number" name="" id="" class="formInp" value="5" min="5"/>
+                    
+                  </div>
+                  <div class="col-6">
+                    <label class="border-label" for="">Type of election</label>
+                    <select name="" id="" class="select in">
+                      <!-- <option value="" disabled selected></option> -->
+                      <option value="unn">Pularity system</option>
+                      <option value="unn">First-past-the-post voting</option>
+                                 
+                    </select>
+                  </div>
+                </div>
+                <div class="notice">
+                  <p>
+                    <span class="text-danger"
+                      >one person is not alowed to host an election.</span
+                    >
+                    Electoral admins must be in team (not less than 5 members)
+                    that the election activities. if you proceed to host this
+                    election,you'll provide the emails of fellow admins and a
+                    link will be sent to them for approval
+                  </p>
+                </div>
+
+                <div class="btn-container">
+                  <button class="btn--enter formBtn btn-not-ready">Next</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="left">
+        <img src="image/Illustration for sign up page 3.svg" alt="">
+      </div>
+    </div>
+      </body>
+</html>

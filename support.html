@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0" />
+        <title>Swiftvote</title>
+        <link rel="stylesheet" href="dist/apexcharts.css">
+        <link rel="shortcut icon" href="assets/img/Swiftvote Logo.svg" />
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+        <script src="https://rawgit.com/moment/2.2.1/min/moment.min.js"></script>
+        <link rel="stylesheet" href="../../fonts.googleapis.com/css21bd6.css?family=Poppins:ital,wght@0,500;0,600;0,700;1,400&amp;display=swap" />
+        <link rel="stylesheet" href="../../fonts.googleapis.com/icon?family=Materials+Icons+Sharp" />
+
+         <!-- <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css" />  -->
+
+        <!-- <link rel="stylesheet" href="assets/plugins/fontawesome/css/fontawesome.min.css" /> -->
+        <!-- <link rel="stylesheet" href="assets/plugins/fontawesome/css/all.min.css" /> -->
+        <!-- <link rel="stylesheet" href="assets/bootstrap5/css/bootstrap.min.css"> -->
+
+        <!-- <link rel="stylesheet" href="assets/css/style.css" /> -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <!-- <link rel="stylesheet" href="style2.css"/> -->
+        <link rel="stylesheet" href="style3.css"/>
+        <link rel="stylesheet" href="style4.css"/>
+        <style>
+            body{
+                background-color: #e5e5e5;
+            }
+        </style>
+    </head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                        <img src="logo1.png" width="50px" height="50px" alt="Unn Logo" style="margin-left: 10px;">
+                        <h2><b>UNN General Electoral Vote</b></span><br>
+                    
+                        <span style="margin-top: -20px; font-size: 0.68rem; color: grey;">General Election</span> </h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <i class="fas fa-window-close">close</i>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="Dashboard2.html" class="active">
+                    <i class="fas fa-th-large"></i>
+                    <h3 class>Dashboard</h3>                </a>
+                <a href="Candidates.html">
+                    <i class="fas fa-user"></i>
+                    <h3>Candidate</h3>
+                </a>
+                <a href="voters.html">
+                    <i class="fas fa-users"></i>
+                    <h3>Voters</h3>
+                </a>
+                <a href="tool.html">
+                    <i class="fas fa-wrench"></i>
+                    <h3>Tool</h3>
+                </a>
+                <hr>
+                <a href="history.html">
+                    <i class="fas fa-clock"></i>
+                    <h3>History</h3>
+                </a>
+                <a href="payment.html">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Payment</h3>
+                </a>
+                <a href="settings.html">
+                    <i class="fas fa-cog"></i>
+                    <h3>Settings</h3>
+                </a>
+                <hr>
+                <a href="support.html">
+                    <i class="fas fa-handshake"></i>
+                    <h3>Support</h3>
+                </a>
+                
+                
+                <a href="help.html">
+                    <i class="fas fa-question"></i>
+                    <h3>Help</h3>
+                </a>
+                <a href="logout.html">
+                    <i class="fas fa-lock"></i>
+                   <h3>Log out</h3>
+                </a>
+                <a href="Dashboard2.html">
+                    <p><img class="img-fluid" style="margin-top: 20px; padding-left: px; " src="assets/img/Swiftvote Logo.svg" alt="Logo" /></p>
+                </a>
+                
+                
+            </div>
+        </aside>
+        <!-- Main page starts -->
+        <main>
+            <div class="top">
+                <!-- <div class="white">ddd</div> -->
+                <div class="search">
+                    <input type="text" id="search" placeholder="search here...">
+                    <label for="search"><i class="fas fa-search"></i></label>
+                </div>
+            
+            <div class="nav">
+                <a href="#"><div class="date" id="active">
+                    <h2 id="president">SUG President</h2>
+                </div></a>
+
+                <div class="date">
+                    <a href=""><h2 id="president" class="">Vice President</h2></a>
+                </div>
+                <div class="date">
+                    <a href=""><h2 id="president" class="">Secretary</h2></a>
+                </div>
+                <div class="date">
+                    <a href=""><h2 id="president" class="">Director Of Games</h2></a>
+                </div>
+                <div class="date">
+                    <a href=""><h2 id="president" class="">Treasurer</h2></a>
+                </div>
+                <div class="date">
+                    <a href=""><h2 id="president" class="">...</h2></a>
+                </div>
+                <!-- <div class="date">
+                    <input type="date">
+                </div> -->
+            </div>
+            </div>
+
+            <div class="insights">
+                <div class="votes">
+                    <i class="fas fa-box"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h1>4,894</h1>
+                            <span class="text-muted">Total votes count</span>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    <!-- </div>
+                    <small class="text-muted">Last 24 hours</small> -->
+                </div>
+                </div>
+                <!-- End of vote count -->
+
+                <div class="voters">
+                    <i class="fas fa-users"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h1>23,158</h1>
+                            <span class="text-muted">Total reg. voters</span>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    <!-- </div>
+                    <small class="text-muted">Last 24 hours</small> -->
+                </div>
+                </div>
+                <!-- End of vote count -->
+
+                <div class="Candidates">
+                    <i class="fas fa-user"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h1 id="number">28</h1>
+                            <span class="text-muted">Total Candidates</span>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    <!-- </div>
+                    <small class="text-muted">Last 24 hours</small> -->
+                </div>
+                </div>
+                <!-- End of vote count -->
+
+                <div class="countdown">
+                    <i class="fas fa-clock"></i>
+                    <div class="middle">
+                        <div class="left">
+                            <h1 class="me">10:57:03</h1>
+                            <span class="text-muted">Countdown</span>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>81%</p>
+                            </div>
+                        </div>
+                    <!-- </div>
+                    <small class="text-muted">Last 24 hours</small> -->
+                </div>
+                </div>
+                <!-- End of vote count -->
+                
+            </div>
+            <!-- charts -->
+        
+
+            <div class="charts">
+               
+                <div class="chart">
+                    <h2 style="margin: 2rem;">Candidates data</h2>
+                    <div id="chart"></div>
+                </div>
+            </div>
+
+            <div class="charts">
+                <div class="chart">
+                    <div id="donutTop"></div>
+                </div>
+            </div>
+            <div id="chart-line"></div>
+
+<!--             
+            <div class="voting-list">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>S/N</th>
+                            <th>Name</th>
+                            <th>Department</th>
+                            <th>Voted for</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td class="primary">Somto chika</td>
+                            <td>Civil Engineering</td>
+                            <td class="primary">Lisa Elizabeth</td>
+                            <td>8:00</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="primary">Somto chika</td>
+                            <td>Civil Engineering</td>
+                            <td class="primary">Lisa Elizabeth</td>
+                            <td>8:00</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="primary">Somto chika</td>
+                            <td>Civil Engineering</td>
+                            <td class="primary">Lisa Elizabeth</td>
+                            <td>8:00</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="primary">Somto chika</td>
+                            <td>Civil Engineering</td>
+                            <td class="primary">Lisa Elizabeth</td>
+                            <td>8:00</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="primary">Somto chika</td>
+                            <td>Civil Engineering</td>
+                            <td class="primary">Lisa Elizabeth</td>
+                            <td>8:00</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="primary">Somto chika</td>
+                            <td>Civil Engineering</td>
+                            <td class="primary">Lisa Elizabeth</td>
+                            <td>8:00</td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td class="primary">Somto chika</td>
+                            <td>Civil Engineering</td>
+                            <td class="primary">Lisa Elizabeth</td>
+                            <td>8:00</td>
+                        </tr>
+                       
+                        
+                    </tbody>
+                </table>
+            </div> -->
+        </main>
+        <div class="right">
+           <div class="top">
+               <button class="menu-btn">   
+                   <i class="fas fa-bars"></i>
+               </button>
+               <div class="theme-toggler">
+                   <i class="fas fa-sun active"></i>
+                   <i class="fas fa-moon"></i>
+               </div>
+               <div class="prpfile-photo">
+                    <img src="me.jpg" style="width: 50px; height: 50px; border-radius: 50%;" alt="">
+               </div>
+               <div class="profile">
+                   <div class="info">
+                       <p><b>Jerry Eni</b></p>
+                       <small class="text-muted">Admin</small>
+                   </div>
+               </div>
+               <i class="fas fa-bell" style="margin-right: 3rem;"></i>
+           </div>
+           <div class="date">
+               <input type="date" name="Date" id="">
+           </div>
+           <div class="top-candidates">
+                
+                <div class="updates">
+                    <h2>Top Candidates</h2>
+                    
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="me.jpg" style="width: 50px; height: 50px; border-radius: 50%;" alt="">
+                        </div>
+                        <div class="candidate">
+                            <p><b>Favour Jennifer</b></p>
+                            <small class="text-muted">30% vote</small>
+                            <div class="progress">
+                               <div class="progress-fill"></div>
+                               <span class="progress-text">23%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+           </div>
+
+
+            <div class="charts">
+               <div class="chart">
+                  <canvas id="lineChart"></canvas>
+               </div>
+            </div> 
+        <!-- Admin tool -->
+
+        <!-- <div class="admin-tool">
+            <h2>Admin</h2>
+            <div class="admin-details" style="background-color: #9af5d7;">
+                <div class="profile-photo">
+                    <img src="me.jpg" style="width: 50px; height: 50px; border-radius: 50%;" alt="">
+                </div>
+                <div class="right">
+                    <div class="info">
+                        <h3>Jerry Eni</h3>
+                    </div>
+                    <small class="">enijerry@unn.edu.ng</small>
+                    <h4>Amin</h4>
+                    </div>
+                </div>
+
+                <div class="admin-details" style="background-color: #9af5d7;">
+                    <div class="profile-photo">
+                        <img src="me.jpg" style="width: 50px; height: 50px; border-radius: 50%;" alt="">
+                    </div>
+                    <div class="right" style="margin-left: 5px;">
+                        <div class="info">
+                            <h3>Jerry Eni</h3>
+                        </div>
+                        <small class="">enijerry@unn.edu.ng</small>
+                        <h4>Amin</h4>
+                        <select class="form-control form-control-sm-3 text-secondary " style="background: transparent;" id="sel1">
+                            <option>Owner</option>
+                            <option>100 level</option>
+                            <option>200 level</option>
+                            <option>300 level</option>
+                            <option>400 level</option>
+                            <option>500 level</option>
+                        </select>
+                        </div>
+                        <div class="right" style="gap: 0.5rem; left: 50px; margin-top: -40px; background: #003487; color: white; display: flex; padding: 0.2rem ; border-radius: 0.5rem;">
+                            <i class="fas fa-box " style="color: orangered; margin-left:5px;"></i> 
+                            <h4>Admin</h4>
+                         </div>
+                </div>
+                <div class="admin-details"  style="background-color: #9af5d7;">
+                    <div class="profile-photo">
+                        <img src="me.jpg" style="width: 50px; height: 50px; border-radius: 50%;" alt="">
+                    </div>
+                    <div class="right1">
+                        <div class="info">
+                            <h3>Jerry Eni</h3>
+                        </div>
+                        <small class="">enijerry@unn.edu.ng</small>
+                        <h4>Amin</h4>
+                     </div>
+                     <div class="right" style="gap: 0.5rem; margin-left: 50px; margin-top: -40px; background: #003487; color: white; display: flex; padding: 0.2rem ; border-radius: 0.5rem;">
+                        <i class="fas fa-box " style="color: orangered; margin-left:5px;"></i> 
+                        <h4>Admin</h4>
+                     </div>
+                </div>
+                <div class="admin-details">
+                    <div class="profile-photo">
+                        <img src="me.jpg" style="width: 50px; height: 50px; border-radius: 50%;" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Jerry Eni</h3>
+                        </div>
+                        <small class="">enijerry@unn.edu.ng</small>
+                        <h4>Amin</h4>
+                        </div>
+                </div>
+                <div class="admin-details">
+                    <div class="profile-photo">
+                        <img src="me.jpg" style="width: 50px; height: 50px; border-radius: 50%;" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Jerry Eni</h3>
+                        </div>
+                        <small class="">enijerry@unn.edu.ng</small>
+                        <h4>Amin</h4>
+                        </div>
+                </div>
+                <div class="admin-details">
+                    <div class="profile-photo">
+                        <img src="me.jpg" style="width: 50px; height: 50px; border-radius: 50%;" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Jerry Eni</h3>
+                        </div>
+                        <small class="">enijerry@unn.edu.ng</small>
+                        <h4>Amin</h4>
+                        </div>
+                </div>
+                <div class="admin-details">
+                    <div class="profile-photo">
+                        <img src="me.jpg" style="width: 50px; height: 50px; border-radius: 50%;" alt="">
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Jerry Eni</h3>
+                        </div>
+                        <small class="">enijerry@unn.edu.ng</small>
+                        <h4>Amin</h4>
+                        </div>
+                </div>
+                    
+            </div> -->
+            
+            
+        </div>
+        </div>
+    
+
+   
+        
+</body>
+        <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script> 
+
+        <script src="assets/js/script.js"></script>
+        
+        <script src="chart1.js"></script>
+        <script src="chart2.js"></script>
+        <!-- <script src="script.js"></script> -->
+        <script src="dist/apexcharts.min.js"></script>
+        <script>
+            var options = {
+          series: [{
+          name: 'Servings',
+          data: [44, 55, 41, 67, 22, 43, 21, 33, 45, 31, 87, 65, 35]
+        }],
+          annotations: {
+          points: [{
+            x: 'Bananas',
+            seriesIndex: 0,
+            label: {
+              borderColor: '#003487',
+              offsetY: 0,
+              style: {
+                color: '#fff',
+                background: '#003487',
+              },
+              text: 'Bananas are good',
+            }
+          }]
+        },
+        chart: {
+          height: 350,
+          type: 'bar',
+        },
+        plotOptions: {
+          bar: {
+            borderRadius: 10,
+            columnWidth: '50%',
+          }
+        },
+        dataLabels: {
+          enabled: false
+        },
+        stroke: {
+          width: 2
+        },
+        
+        grid: {
+          row: {
+            colors: ['#fff', '#f2f2f2']
+          }
+        },
+        xaxis: {
+          labels: {
+            rotate: -45
+          },
+          categories: ['Apples', 'Oranges', 'Strawberries', 'Pineapples', 'Mangoes', 'Bananas',
+            'Blackberries', 'Pears', 'Watermelons', 'Cherries', 'Pomegranates', 'Tangerines', 'Papayas'
+          ],
+          tickPlacement: 'on'
+        },
+        yaxis: {
+          title: {
+            text: 'Servings',
+          },
+        },
+        fill: {
+          type: 'gradient',
+          gradient: {
+            shade: 'light',
+            type: "horizontal",
+            shadeIntensity: 0.25,
+            gradientToColors: undefined,
+            inverseColors: true,
+            opacityFrom: 0.85,
+            opacityTo: 0.85,
+            stops: [50, 0, 100]
+          },
+        }
+        };
+
+        var chart = new ApexCharts(document.querySelector("#chart"), options);
+        chart.render();
+
+       
+        </script>
+
+        
+</html>

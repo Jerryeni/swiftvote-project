@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="stylesheet" href="css/loginspecialclass.css">
+    <script src="confirm.js" defer></script>
+<link
+      href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/verifyemail.css">
+
+ 
+</head>
+<body>
+    <!-- <div class="wrapper">
+        <div class="container-fluid right ">
+           <div class="">
+                  <div class="logo pb-3">
+                    <p class="text-danger lead">
+                    Swift<span class="text-primary">Vote</span>
+                </p>
+              </div>
+              <div class="formholder">
+                   <div class="intro pb-3">
+                     <p class="lead text-center">Welcome to <b>swiftvote</b></p>
+                   </div>
+                    <form action="" class="l-form">
+                        <div class="election-title">
+                            <input type="text" name="" id="admin-id" class="form-control" placeholder="Enter admin ID"
+                            maxlength="12">
+                        </div>
+                        <div class="election-title">
+                            <input type="password" name="" id="admin-password" class="form-control" placeholder="Password">
+                        </div>
+                        <div class="forget-pass">
+                            <a href="#">Forgotten password?</a>
+                        </div>
+                        
+                        <div class="p-18 btn-container ">
+                            <button class="btn" id="login-btn" >Enter</button>
+                        </div>
+                        <div class="new">
+                            <a href="#" class="text-center">Are you New?</a>
+                        </div>
+                        <div class="p-18 btn-container-border">
+                            <button class="signin">Sign up</button>
+                        </div>
+                      
+                    </form>
+               </div>
+           </div>
+        </div>
+        <div class="left">
+            
+        </div>
+
+    </div> -->
+    <div class="overlay">
+        <div class="content ">
+            <div class="message ">
+             <div>
+                  <i class="fa-solid fa-envelope fa-10x"></i>
+              <span>1</span>
+             </div>
+            </div>       
+              <!-- <svg>
+              <use xlink:href="anotfont/message-square.svg"></use>
+            </svg> -->
+          <div class="pb-5">
+                <h3>Check your email</h3>
+          </div>
+         <div class="pb-5 info-box">
+                <p class="text-start">
+                A six digit code has been sent to your email do confirm and let us roll
+            </p>
+         </div>
+         
+        <div class="inputs pb-5">
+            <input type="text" class="email-pin  input-1"  maxlength='6'   data-set="1" data-pos='0' id="ist" onkeyup="clickEvent (this,'sec')">
+            <input type="text" class="email-pin   input-2" maxlength='6' data-set="2" data-pos='1' id="sec" onkeyup="clickEvent (this,'third')">
+            <input type="text" class="email-pin input-3" maxlength='6' data-set="3" data-pos='2' id="third" onkeyup="clickEvent (this,'fourth')"/>
+           <div class="seperator">
+                <h1>&dash;</h1>
+           </div>
+            <input type="text" class="email-pin input-4" maxlength='6' data-set="4" data-pos='3' id="fourth" onkeyup="clickEvent (this,'fift')">
+            <input type="text" class="email-pin input-5" maxlength='6' data-set="5" data-pos='4' id="fift" onkeyup="clickEvent (this,'sixth')">
+            <input type="text" class="email-pin input-6" maxlength='6' data-set="6" data-pos='5' id="sixth">
+        </div>
+            <div class="resend">
+                <p>
+                   1:00<span class="resend-bt" style="margin-left: 420px;"> RESEND</span>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function clickEvent(first,last){
+            if(first.value.length){
+                document.getElementById(last).focus();
+            }
+            // else (e.key===bac){
+
+            // }
+        }
+    </script>
+</body>
+</html
